@@ -14,19 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/',[LoginRegisterController::class,'login'])->name('loginPage');
+Route::get('/register',[LoginRegisterController::class,'register'])->name('registerPage');
 
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified'
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return view('dashboard');
-//     })->name('dashboard');
-// });
-
-Route::get('/',[LoginRegisterController::class,'login'])->name('login');
-Route::get('/register',[LoginRegisterController::class,'register'])->name('register');
+Route::middleware([
+    'auth'])->group(function () {
+        Route::get('/home',function(){
+            return "Home";
+        });
+});

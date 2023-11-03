@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <div class="login-form">
                             <div class="my-3">
-                                <h3 class="text-center">Register Form</h3>
+                                <h3 class="text-center">Ninja HR</h3>
                                 <p class="text-center text-muted">Fill the form to Register</p>
                             </div>
                             <form action="{{ route('register') }}" method="post">
@@ -70,7 +70,7 @@
                             <div class="register-link">
                                 <p>
                                     Already have an account?
-                                    <a href="{{ route('login') }}">Sign In</a>
+                                    <a href="{{ route('loginPage') }}">Sign In</a>
                                 </p>
                             </div>
                         </div>
