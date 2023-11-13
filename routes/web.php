@@ -16,7 +16,7 @@ use App\Http\Controllers\LoginRegisterController;
 */
 
 Route::get('/',[LoginRegisterController::class,'login'])->name('loginPage');
-Route::get('/register',[LoginRegisterController::class,'register'])->name('registerPage');
+Route::get('/register',[LoginRegisterController::class,'register'])->name('register');
 
 Route::middleware([
     'auth'])->group(function () {

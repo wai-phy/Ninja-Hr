@@ -38,7 +38,7 @@
                         <div class="register-link">
                             <p>
                                 Don't you have an account?
-                                <a href="{{route('registerPage')}}">Sign Up Here</a>
+                                <a href="{{route('register')}}">Sign Up Here</a>
                             </p>
                         </div>
                     </div>
