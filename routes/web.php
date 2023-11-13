@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\LoginRegisterController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\LoginRegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,5 @@ Route::get('/register',[LoginRegisterController::class,'register'])->name('regis
 
 Route::middleware([
     'auth'])->group(function () {
-        Route::get('/home',function(){
-            return "Home";
-        });
+        Route::get('/home',[PageController::class,'home'])->name('home');
 });

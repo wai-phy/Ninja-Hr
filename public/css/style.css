@@ -1,0 +1,21 @@
+.btn-theme{
+    color: #fff;
+    background-color: #4CD195 !important;
+}
+
+.btn-theme :hover{
+    color: #fff !important;
+}
+
+/* -------- header menu ------- */
+.header-menu{
+    padding: 15x 0 !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* -------- bottom menu ------- */
+.bottom-menu{
+    bottom: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
