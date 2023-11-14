@@ -16,6 +16,24 @@
 
 /* -------- bottom menu ------- */
 .bottom-menu{
+    position: absolute;
+    width: 100%;
     bottom: 0;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+
+.bottom-menu a{
+    text-align: center;
+    padding: 15px;
+    color: #000;
+}
+
+.bottom-menu a p{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+
+/*---------------------- side bar ------------------ */
+
